@@ -8,10 +8,10 @@ function Hero() {
 
       {/* Caption Content */}
       <div className='absolute z-10 text-center text-black max-w-3xl px-6 md:px-8 lg:px-12'>
-        <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight'>
+        <h1 className='text-3xl leading-[30px] sm:text-4xl md:text-5xl lg:text-6xl font-bold'>
           Ready to switch careers and break into tech?
         </h1>
-        <p className='mt-4 text-base sm:text-lg md:text-xl lg:text-2xl font-light'>
+        <p className='mt-4 leading-5 text-base sm:text-lg md:text-xl lg:text-2xl font-light'>
           Join our hands-on Full Stack Software Development training
           program designed specifically for career changers. Gain the
           skills, confidence, and support you need to thrive in the
