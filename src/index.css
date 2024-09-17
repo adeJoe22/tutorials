@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.mesh-gradient-background {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Mesh Layer: White with lower opacity */
+.mesh-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3); /* Semi-transparent white */
+  backdrop-filter: blur(15px); /* Blur effect for mesh */
+  z-index: 2;
+}
+
+/* Common Styles for Color Elements */
+.color-element {
+  position: absolute;
+  width: 30vw;
+  height: 30vh;
+  border-radius: 50%; /* Make them circular or oval */
+  opacity: 0.6; /* Slight transparency */
+  filter: blur(50px); /* Apply blur to each color element */
+  z-index: 1;
+  animation: randomMove 25s ease-in-out infinite alternate; /* Random movement */
+}
+
+/* Individual Colors */
+.color-one {
+  background-color: #a594f9; /* Orange */
+  animation-delay: 0s; /* Delay for different starting times */
+}
+
+.color-two {
+  background-color: #cdc1ff; /* Pink */
+  animation-delay: 3s; /* Delayed to start later */
+}
+
+.color-three {
+  background-color: #b1b2ff; /* Green */
+  animation-delay: 6s; /* Delayed to start later */
+}
+
+/* Keyframes for Random Movement */
+@keyframes randomMove {
+  0% {
+    top: 0;
+    left: 0;
+    transform: scale(1);
+  }
+  25% {
+    top: 20%;
+    left: 50%;
+    transform: scale(1.2);
+  }
+  50% {
+    top: 70%;
+    left: 10%;
+    transform: scale(0.9);
+  }
+  75% {
+    top: 40%;
+    left: 80%;
+    transform: scale(1.1);
+  }
+  100% {
+    top: 80%;
+    left: 60%;
+    transform: scale(1);
+  }
+}
