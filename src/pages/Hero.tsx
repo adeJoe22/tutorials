@@ -17,7 +17,7 @@ function Hero() {
           skills, confidence, and support you need to thrive in the
           digital world!
         </p>
-        <button className='mt-8 px-5 py-3 sm:px-6 sm:py-3 md:px-8 md:py-4 bg-[#B1B2FF] text-white font-medium rounded-lg shadow-lg hover:bg-indigo-700 transition duration-300 ease-in-out'>
+        <button className='mt-8 px-5 py-3 sm:px-6 sm:py-3 md:px-8 md:py-4 bg-[#797bec] text-white font-medium rounded-lg shadow-lg hover:bg-indigo-700 transition duration-300 ease-in-out'>
           Get Started Today
         </button>
       </div>

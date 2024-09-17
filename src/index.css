@@ -29,27 +29,27 @@
   position: absolute;
   width: 30vw;
   height: 30vh;
-  border-radius: 50%; /* Make them circular or oval */
-  opacity: 0.6; /* Slight transparency */
-  filter: blur(50px); /* Apply blur to each color element */
+  border-radius: 50%;
+  opacity: 0.7;
+  filter: blur(50px);
   z-index: 1;
-  animation: randomMove 25s ease-in-out infinite alternate; /* Random movement */
+  animation: randomMove 25s ease-in-out infinite alternate;
 }
 
 /* Individual Colors */
 .color-one {
-  background-color: #a594f9; /* Orange */
-  animation-delay: 0s; /* Delay for different starting times */
+  background-color: #a594f9;
+  animation-delay: 0s;
 }
 
 .color-two {
-  background-color: #cdc1ff; /* Pink */
-  animation-delay: 3s; /* Delayed to start later */
+  background-color: #fffdb5;
+  animation-delay: 3s;
 }
 
 .color-three {
-  background-color: #b1b2ff; /* Green */
-  animation-delay: 6s; /* Delayed to start later */
+  background-color: #b1b2ff;
+  animation-delay: 6s;
 }
 
 /* Keyframes for Random Movement */
